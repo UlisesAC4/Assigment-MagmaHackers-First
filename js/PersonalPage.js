@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	$('.parallax').parallax();
+	
 	var altura = $('.Menu').offset().top;
 
 	$(window).on('scroll', function(){
@@ -7,9 +9,11 @@ $(document).ready(function(){
 		} else {
 			$('.Menu').removeClass('MenuFixed');
 		}
-    
+
 	});
+
 });
+
 $(function(){
 
      $('a[href*=#]').click(function() {
