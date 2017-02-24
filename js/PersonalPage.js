@@ -1,6 +1,10 @@
 $(document).ready(function(){
+	$(".button-collapse").sideNav({
+    draggable: true
+  });
+
 	$('.parallax').parallax();
-	
+
 	var altura = $('.Menu').offset().top;
 
 	$(window).on('scroll', function(){
